@@ -1,0 +1,168 @@
+/* Reset styles for full-screen fix */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    height: 100%;
+    width: 100%;
+    font-size: 16px; /* Base font size */
+    user-select: none; /* Prevent text selection */
+}
+
+/* Prevent zooming on some browsers */
+body {
+    touch-action: manipulation;
+}
+
+/* Home Section - Fullscreen & Fixed */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    position: fixed; /* Ensures it does not move */
+}
+
+/* Content Box */
+.content {
+    max-width: 600px;
+    padding: 2vw; /* Responsive padding */
+}
+
+/* Highlighted Name */
+.highlight {
+    font-size: 2.8rem; /* Scales better than px */
+    font-weight: bold;
+    color: #ff6600;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Subtitle */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Description */
+p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 3vh;
+}
+
+/* Down Arrow - Centered at the Bottom */
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #ffcc00;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 1.5s infinite;
+    
+    position: absolute;
+    bottom: 5vh; /* Keeps it at the bottom */
+    left: 50%; /* Move it to the center */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+}
+
+
+/* Prevent zooming effect on hover */
+.arrow-down:hover {
+    transform: scale(1.1);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Contact Icons Styling */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Space between icons */
+    margin-top: 40px;
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .contact-icons .icon {
+    font-size: 30px;
+    color: #ff9800;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 50%; /* Makes it circular */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Black background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Initial shadow */
+}
+
+.contact-icons .icon:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Highlight effect on hover */
+}
+
+  
+  /* Hidden text initially */
+  .icon-text {
+    font-size: 15px;
+    color: #ffffff;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: absolute;
+    bottom: -30px;
+  }
+  
+  /* Show text on hover */
+  .icon-container:hover .icon-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .resume-button {
+    display: inline-block;
+    margin-top: 40px; /* Increased spacing */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff9800, #ff6600);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 20px; /* Moves the button slightly downward */
+}
+
+.resume-button:hover {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 204, 0, 0.5);
+}
+
