@@ -22,7 +22,7 @@ export default function About() {
   // Typed.js Effect for "About Me"
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ["About Me", "Who Am I?", "A Little About Me"], // Animated text
+      strings: ["About Me", "Hi. There!", "A Little About Me"], // Animated text
       typeSpeed: 80,
       backSpeed: 50,
       loop: true,

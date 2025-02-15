@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./Projects.css";
-import itemSeekerImg from "../assets/proj.png";
+import itemSeekerImg from "../assets/proj2.png";
 import floodGuardImg from "../assets/proj.png";
 import TypingEffect from "./TypingEffect"; // Import the TypingEffect component
 import { FaHome } from "react-icons/fa";
@@ -71,7 +71,7 @@ export default function Projects() {
             <div className="project-wrapper">
               <img src={project.img} alt={project.title} className="project-img" />
               <div className="project-info">
-                <h3><TypingEffect text={project.title} /></h3>
+                <h3>📌<TypingEffect text={project.title} /></h3>
                 <p>{project.desc}</p>
               </div>
             </div>

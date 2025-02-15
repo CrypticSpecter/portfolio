@@ -4,12 +4,19 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #1a1a1a, #333);
     color: white;
     font-family: "Poppins", sans-serif;
     padding: 60px;
     gap: 80px;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.5), rgba(51, 51, 51, 0.5)),
+  url('/src/assets/bg6.gif') no-repeat center center fixed;
+  background-size: cover;
 }
+
+* {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1); /* Thicker outline */
+}
+
 
 .profile-section {
     flex: 1;
@@ -46,10 +53,12 @@
     height: 530px;
     background-size: cover;
     z-index: 1;
+    mix-blend-mode: soft-light;
     opacity: 0.9;
     filter: blur(2px); /* Slight blur for blending effect */
-    border: 5px solid #ff4d00; /* Adds a solid border */
+    border: 5px solid #ffcc00; /* Adds a solid border */
     border-radius: 15px; /* Matches the image shape */
+    box-shadow: 0 0 10px black; /* Adds an outline effect */
 }
 
 /* Gradient Overlay to Blend with Background */
@@ -65,7 +74,9 @@
     mix-blend-mode: soft-light;
     filter: blur(2px); /* Slight blur for blending effect */
     border: 5px solid #ff4d00; /* Adds a solid border */
+    box-shadow: 0 0 10px black; /* Adds an outline effect */
 }
+
 
 
 /* Hover Effect */

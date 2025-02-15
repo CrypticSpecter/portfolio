@@ -4,6 +4,10 @@
     overflow: hidden;
 }
 
+* {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1); /* Thicker outline */
+}
+
 /* Title */
 .projects-title {
     font-size: 2.2rem;

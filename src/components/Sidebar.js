@@ -4,7 +4,7 @@ import "./Sidebar.css";
 
 export default function Sidebar() {
   const [activeSection, setActiveSection] = useState("");
-  const [isVisible, setIsVisible] = useState(false); // Sidebar visibility state
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,10 +28,10 @@ export default function Sidebar() {
     <>
       {/* Toggle Button */}
       <button className="sidebar-toggle" onClick={() => setIsVisible(true)}>
-        ☰ {/* Hamburger icon */}
+        ☰
       </button>
 
-      {/* Full-Screen Sidebar */}
+      {/* Sidebar */}
       <nav className={`sidebar ${isVisible ? "visible" : ""}`}>
         {/* Close Button */}
         <button className="close-btn" onClick={() => setIsVisible(false)}>
@@ -40,13 +40,13 @@ export default function Sidebar() {
 
         <ul>
           <li className={activeSection === "home" ? "active" : ""}>
-            <Link to="/" onClick={() => setIsVisible(false)}>Home</Link>
+            <Link to="/" onClick={() => setIsVisible(false)}>🏠 Home</Link>
           </li>
           <li className={activeSection === "about" ? "active" : ""}>
-            <Link to="/about" onClick={() => setIsVisible(false)}>About</Link>
+            <Link to="/about" onClick={() => setIsVisible(false)}>👤 About Me</Link>
           </li>
           <li className={activeSection === "projects" ? "active" : ""}>
-            <Link to="/projects" onClick={() => setIsVisible(false)}>Projects</Link>
+            <Link to="/projects" onClick={() => setIsVisible(false)}>📂 Projects</Link>
           </li>
         </ul>
       </nav>

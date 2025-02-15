@@ -42,8 +42,7 @@ export default function Home() {
           <span ref={typedRef}></span>
         </h2>
         <p>
-          Passionate about building modern, interactive, and user-friendly
-          digital experiences.
+        Eager to learn and grow in front-end development, while gaining hands-on experience in the field.
         </p>
 
         {/* Contact Icons with Hover Text */}
