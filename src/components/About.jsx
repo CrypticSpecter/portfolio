@@ -51,7 +51,7 @@ export default function About() {
   }, [isHovered]);
 
   const text =
-  "I am a fourth-year Bachelor of Science in Information Technology student at Holy Cross of Davao College, aspiring to become a front-end developer and web developer. I am seeking an internship to gain real-world experience, further develop my skills, and continue growing in the field.";
+  "I am a Bachelor of Science in Information Technology student at Holy Cross of Davao College, aspiring to become a web developer. I am eager to gain real-world experience, further develop my skills, and continue growing in the field.";
 
 const letters = text.split(""); // Split into individual letters
 const colors = ["#ff4d00", "#ff9800", "#ffcc00"]; // Bright Orange, Spring Green, Deep Sky Blue
@@ -136,7 +136,7 @@ useEffect(() => {
         {/* Down arrow with navigation */}
         <div
           className="arrow-down"
-          onClick={() => navigate("/Projects")}
+          onClick={() => navigate("/Certificate")}
           role="button"
           aria-label="Go to Projects page"
         >

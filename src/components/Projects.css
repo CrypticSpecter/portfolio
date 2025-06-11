@@ -1,7 +1,13 @@
 .projects {
+    height: 100vh;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 60px;
+    gap: 80px;
     text-align: center;
-    padding: 4rem 2rem;
-    overflow: hidden;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.5), rgba(51, 51, 51, 0.5)),
+  url('/src/assets/bg4.gif') no-repeat center center fixed;
+    background-size: cover;
 }
 
 * {
@@ -153,6 +159,7 @@
     justify-content: center;
     align-items: center;
     animation: bounce 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) infinite; /* Apply bounce animation */
+    z-index: 9999;
   }
   
   .go-home-btn:hover {

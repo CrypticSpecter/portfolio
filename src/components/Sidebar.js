@@ -45,6 +45,9 @@ export default function Sidebar() {
           <li className={activeSection === "about" ? "active" : ""}>
             <Link to="/about" onClick={() => setIsVisible(false)}>👤 About Me</Link>
           </li>
+          <li className={activeSection === "certificate" ? "active" : ""}>
+            <Link to="/certificate" onClick={() => setIsVisible(false)}>📜 Certicates</Link>
+          </li>
           <li className={activeSection === "projects" ? "active" : ""}>
             <Link to="/projects" onClick={() => setIsVisible(false)}>📂 Projects</Link>
           </li>

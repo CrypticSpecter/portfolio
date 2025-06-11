@@ -11,8 +11,7 @@ export default function Home() {
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
       strings: [
-        "BSIT Intern",
-        "Aspiring Front-end Developer",
+        "BSIT Student",
         "Aspiring Web Developer",
       ],
       typeSpeed: 50,
@@ -42,7 +41,7 @@ export default function Home() {
           <span ref={typedRef}></span>
         </h2>
         <p>
-        Eager to learn and grow in front-end development, while gaining hands-on experience in the field.
+        Eager to learn and grow, while gaining hands-on experience in the field.
         </p>
 
         {/* Contact Icons with Hover Text */}

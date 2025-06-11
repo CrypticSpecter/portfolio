@@ -91,7 +91,7 @@ export default function Projects() {
         ))}
       </div>
       <div className="go-home-btn" onClick={handleGoHome}>
-        <FaHome size={30} color="#fff" />
+        <FaHome size={30} />
       </div>
     </section>
   );
